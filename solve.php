@@ -65,7 +65,7 @@ class ShortestDistance
         }
         // back to first city
         if ($currentCity) {
-            $distant = round($this->distance($currentCity, $firstCity), 2);
+            $distant                = round($this->distance($currentCity, $firstCity), 2);
             $this->shortestRoutes[] = [$currentCity, $firstCity, 'distant' => $distant];
             $this->shortestDistance += $distant;
         }
