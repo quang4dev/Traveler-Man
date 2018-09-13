@@ -13,9 +13,9 @@ class City
 
     public function __construct($name, $latitude, $longitude)
     {
-        $this->name = $name;
-        $this->latitude = $latitude;
-        $this->longitude = $longitude;
+        $this->name         = $name;
+        $this->latitude     = $latitude;
+        $this->longitude    = $longitude;
     }
 }
 
@@ -25,10 +25,10 @@ class City
  */
 class ShortestDistance
 {
-    protected $n            = 0;
-    protected $locations    = array();
-    protected $costMatrix   = array();
-    protected $cities       = [];
+    protected $n                = 0;
+    protected $locations        = array();
+    protected $costMatrix       = array();
+    protected $cities           = [];
 
     private $shortestRoutes     = [];
     private $shortestDistance   = 0;
